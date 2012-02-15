@@ -534,7 +534,7 @@
 
 		<eLabel text="About" position="80,40" size="800,35" font="Regular;32" backgroundColor="backtop" transparent="1"/>
 
-		<widget source="EnigmaVersion" 	render="Label" 	position="500,120"	size="500,25" font="Regular;22" backgroundColor="background" transparent="1" />
+		<widget source="iStbVersion" 	render="Label" 	position="500,120"	size="500,25" font="Regular;22" backgroundColor="background" transparent="1" />
 		<widget source="ImageVersion" 	render="Label" 	position="500,155" 	size="500,25" font="Regular;22" backgroundColor="background" transparent="1" />
 		<widget source="FPVersion" 		render="Label" 	position="500,190" 	size="500,25" font="Regular;22" backgroundColor="background" transparent="1" />
 		<widget source="TunerHeader" 	render="Label" 	position="500,235"	size="500,25" font="Regular;22" backgroundColor="background" transparent="1" />
@@ -735,7 +735,7 @@
 		<widget name="list" position="0,30" size="550,320" itemHeight="32" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
-from enigma import eSize, ePoint
+from istb import eSize, ePoint
 
 orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
@@ -958,82 +958,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_yellow" 						position="700,641" size="240,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
 		<widget name="key_blue" 						position="990,641" size="240,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
-	<screen name="genuineDreambox" 					position="0,0" 		size="1280,720" 	title="Genuine Dreambox" 			flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="1"/>
-		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="900,70" size="310,22" font="Regular;20" halign="right" backgroundColor="backtop" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<widget source="Title" render="Label" 	position="80,40" size="800,35" font="Regular;32" backgroundColor="backtop" transparent="1"/>
-
-		<eLabel 								position="480,115" size="730,500" zPosition="1" backgroundColor="grey" />
-		<eLabel 								position="482,117" size="726,496" zPosition="2" backgroundColor="background" />
-		<widget name="infotext" 				position="490,155" size="710,190" zPosition="3" font="Regular;22" halign="center" backgroundColor="background" transparent="1"/>
-		<widget name="resulttext" 				position="490,385" size="710, 50" zPosition="3" font="Regular;35" halign="center" backgroundColor="background" transparent="1"/>
-		<widget name="infotext2" 				position="490,525" size="710, 80" zPosition="3" font="Regular;22" halign="center" backgroundColor="background" transparent="1"/>
-
-		<ePixmap pixmap="ET-HD/buttons/red.png" 	position=" 80,643" size="20,20" alphatest="on" />
-		<ePixmap pixmap="ET-HD/buttons/green.png" 	position="370,643" size="20,20" alphatest="on" />
-		<widget name="kRed" position="120,641" size="240,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
-		<widget name="kGreen" position="410,641" size="240,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
-
-		<ePixmap pixmap="ET-HD/icons/info.png" position="80,490" size="170,110" alphatest="blend" />
-	</screen>
-	<screen name="GraphMultiEPG" 					position="0,0" 		size="1280,720" 	title="Electronic Program Guide" 	flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="ET-HD/menu/back-epg.png" transparent="1"/>
-		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="900,70" size="310,22" font="Regular;20" halign="right" backgroundColor="backtop" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel text="Electronic Program Guide" 	position="80,40" size="800,35" font="Regular;32" backgroundColor="backtop" transparent="1"/>
-
-		<eLabel 						position="80,115" size="1120, 2" backgroundColor="#cccccc" />
-		<widget name="timeline_text" 	position=" 0,117" size="1280,25" transparent="1" />
-		<eLabel 						position="80,142" size="1120, 2" backgroundColor="#cccccc" />
-
-		<widget name="list" 			position="80,150" size="1120,330" itemHeight="55" EntryBorderColor="#cccccc" EntryBackgroundColor="#15000000" EntryBackgroundColorSelected="#15688caf" scrollbarMode="showOnDemand" transparent="1"/>
-	
-		<eLabel 						position="297,144" size="2, 341" backgroundColor="#cccccc" />
-
-		<widget name="timeline0" 		position=" 0,145" zPosition="1" size=" 1,339" pixmap="ET-HD/timeline.png" />
-		<widget name="timeline1" 		position=" 0,145" zPosition="1" size=" 1,339" pixmap="ET-HD/timeline.png" />
-		<widget name="timeline2" 		position=" 0,145" zPosition="1" size=" 1,339" pixmap="ET-HD/timeline.png" />
-		<widget name="timeline3" 		position=" 0,145" zPosition="1" size=" 1,339" pixmap="ET-HD/timeline.png" />
-		<widget name="timeline4" 		position=" 0,145" zPosition="1" size=" 1,339" pixmap="ET-HD/timeline.png" />
-		<widget name="timeline5" 		position=" 0,145" zPosition="1" size=" 1,339" pixmap="ET-HD/timeline.png" />
-		<widget name="timeline_now" 	position=" 0,145" zPosition="2" size="19,339" pixmap="ET-HD/timeline-now.png" alphatest="on" />
-
-		<eLabel 						position="80,485" size="1120, 2" backgroundColor="#cccccc" />
-
-		<widget source="Event" render="Label" 		position=" 80,495" 	size="400,25" font="Regular;19" backgroundColor="background" transparent="1" >
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="Event" render="Label" 		position=" 80,525" 	size=" 60,25" font="Regular;19" backgroundColor="background" transparent="1" >
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText"></convert>
-		</widget>
-		<widget source="Event" render="Label" 		position="140,525" 	size=" 70,25" font="Regular;19" backgroundColor="background" transparent="1" >
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Format:- %H:%M</convert>
-		</widget>
-		<widget source="Event" render="Progress" 	position="230,528" 	size="120,12" borderWidth="1" 	 borderColor="grey" backgroundColor="background" transparent="1" >
-			<convert type="EventTime">Progress</convert>
-		</widget>
-
-		<widget source="Event" render="Label" 		position="500,495" 	size="700,125" font="Regular;18" foregroundColor="#cccccc" backgroundColor="background" transparent="1" >
-			<convert type="EventName">ExtendedDescription</convert>
-		</widget>
-
-		<ePixmap pixmap="ET-HD/buttons/red.png" 	position=" 80,643" size="20,20" alphatest="on" />
-		<ePixmap pixmap="ET-HD/buttons/green.png" 	position="370,643" size="20,20" alphatest="on" />
-		<widget name="key_red" 							position="120,641" size="240,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
-		<widget name="key_green" 						position="410,641" size="240,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
-	</screen>
-	<screen name="HarddiskSelection" 				position="0,0" 		size="1280,720" 	title="Select HDD" 					flags="wfNoBorder">
+<screen name="HarddiskSelection" 				position="0,0" 		size="1280,720" 	title="Select HDD" 					flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -1214,7 +1139,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="list" position="20,95" size="760,320" itemHeight="32" enableWrapAround="1" transparent="1" />
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
-from enigma import eSize, ePoint
+from istb import eSize, ePoint
 orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
 textsize = self["text"].getSize()
@@ -2984,8 +2909,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="castlabel" 		position="480,345" 	size="730,250" 	font="Regular;20" backgroundColor="background" transparent="1"/>
 		<widget name="extralabel" 		position="480,170" 	size="730,400" 	font="Regular;20" backgroundColor="background" transparent="1"/>
 
-		<widget name="starsbg" 			position="990,110" 	size="210,21" 	pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="2" alphatest="blend" />
-		<widget name="stars" 			position="990,110" 	size="210,21" 	pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="3" transparent="1"/>
+		<widget name="starsbg" 			position="990,110" 	size="210,21" 	pixmap="/usr/lib/istb/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="2" alphatest="blend" />
+		<widget name="stars" 			position="990,110" 	size="210,21" 	pixmap="/usr/lib/istb/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="3" transparent="1"/>
 		<widget name="ratinglabel" 		position="990,134" 	size="210,24" 	font="Regular;20" halign="center" foregroundColor="#f0b400" transparent="1"/>
 
 		<widget name="statusbar" 		position="480,600" 	size="730,27" 	font="Regular;24" foregroundColor="#cccccc" backgroundColor="background" transparent="1"/>
@@ -3702,7 +3627,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="session.CurrentService" render="Label" position="470,110" size="100,24" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" >
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<ePixmap position="80,80" size="100,40" zPosition="4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/plugin.png" alphatest="on" transparent="1" />
+		<ePixmap position="80,80" size="100,40" zPosition="4" pixmap="/usr/lib/istb/python/Plugins/Extensions/MyTube/plugin.png" alphatest="on" transparent="1" />
 	</screen>
 	<screen name="MyTubePlayerMainScreen" 			position="0,0" 		size="1280,720" 	title="MyTubePlayerMainScreen..." 	flags="wfNoBorder" >
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="1"/>
