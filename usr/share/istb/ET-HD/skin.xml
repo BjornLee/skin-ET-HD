@@ -170,7 +170,11 @@
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
     	</widget>
-		<widget source="session.CurrentService" render="Pixmap" 	pixmap="ET-HD/ico_crypt_on.png"		position="487,116" size="21,20" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" 	pixmap="ET-HD/ico_hbbtv_on.png"	position="487,116" size="36,20" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">HasHBBTV</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" 	pixmap="ET-HD/ico_crypt_on.png"		position="534,116" size="21,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
