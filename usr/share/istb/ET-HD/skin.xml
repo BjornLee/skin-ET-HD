@@ -1529,10 +1529,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel 								position="480,146" size="730,470" zPosition="1" backgroundColor="grey" />
 		<eLabel 								position="482,148" size="726,466" zPosition="2" backgroundColor="background" />
 		<widget name="list" 					position="490,156" size="710,450" zPosition="3" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
-		<ePixmap pixmap="ET-HD/buttons/red.png" 	position=" 470,643" size="20,20" alphatest="on" />
-		<ePixmap pixmap="ET-HD/buttons/green.png" 	position="840,643" size="20,20" alphatest="on" />
-		<widget name="red" position="510,641" size="320,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
-		<widget name="green" position="880,641" size="320,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
 		<ePixmap position="80,490" size="110,110" zPosition="2" pixmap="ET-HD/icons/plugin.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="PluginDownloadBrowser" 			position="0,0" 		size="1280,720" 	title="Downloadable plugins" 		flags="wfNoBorder">
