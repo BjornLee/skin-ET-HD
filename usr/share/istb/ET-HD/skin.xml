@@ -1020,14 +1020,6 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel text="help..." position="80,40" size="800,35" font="Regular;32" backgroundColor="backtop" transparent="1"/>
-
-		<widget name="rc" 			position="170,115" 	size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="on" />
-		<widget name="long_key" 	position=" 80,635" 	size="300,30" font="Regular;24" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" />
-		<widget name="list" 		position="490,110" 	size="720,456" scrollbarMode="showOnDemand" transparent="1" />
-		<widget name="arrowdown" 	position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowdown2" 	position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup" 		position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup2" 	position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 	</screen>
 	<screen name="LanguageSelection" 				position="0,0" 		size="1280,720" 	title="Language selection" 			flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="1" />
@@ -3802,11 +3794,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel text="CleanupWizard" 	position="80,40" size="800,35" font="Regular;32" backgroundColor="backtop" transparent="1"/>
-		<widget name="rc" 			position="150,115" 		size="154,500" 	pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="on" />
-		<widget name="arrowdown" 	position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowdown2" 	position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup" 		position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup2" 	position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="wizard" 								position="490,120" 	size="110,174" 	pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on"/>
 		<ePixmap pixmap="ET-HD/buttons/red.png" 		position="490,305" 	size="21,21" 	alphatest="on" />
 		<widget name="languagetext" 						position="525,305" 	size="150,23"	font="Regular;21" backgroundColor="background" transparent="1" />
@@ -3879,11 +3866,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel text="ImageWizard" 	position="80,40" size="800,35" font="Regular;32" backgroundColor="backtop" transparent="1"/>
-		<widget name="rc" 			position="150,115" 		size="154,500" 	pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="on" />
-		<widget name="arrowdown" 	position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowdown2" 	position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup" 		position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup2" 	position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="wizard" 								position="490,120" 	size="110,174" 	pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on"/>
 		<ePixmap pixmap="ET-HD/buttons/red.png" 		position="490,305" 	size="21,21" 	alphatest="on" />
 		<widget name="languagetext" 						position="525,305" 	size="150,23"	font="Regular;21" backgroundColor="background" transparent="1" />
@@ -3932,12 +3914,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel text="NetworkWizard" 	position="80,40" size="800,35" font="Regular;32" backgroundColor="backtop" transparent="1"/>
-		<widget name="rc" 		position="150,115" 	size="154,500" 	pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="on" />
-		<widget name="arrowdown" 	position="-100,-100" 	size="37,70" 		pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowdown2" 	position="-100,-100" 	size="37,70" 		pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup" 	position="-100,-100" 	size="37,70" 		pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup2" 	position="-100,-100" 	size="37,70" 		pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
-		<widget name="wizard" 								position="490,120" 	size="110,174" 	pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on"/>
 		<ePixmap pixmap="ET-HD/buttons/red.png" 		position="490,305" 	size="21,21" 	alphatest="on" />
 		<widget name="languagetext" 						position="525,305" 	size="150,23"	font="Regular;21" backgroundColor="background" transparent="1" />
 		<widget name="text" 								position="680,120" 	size="500,260" 	font="Regular;23" backgroundColor="background" transparent="1" />
@@ -3955,11 +3931,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel text="StartWizard" 	position="80,40" size="800,35" font="Regular;32" backgroundColor="backtop" transparent="1"/>
-		<widget name="rc" 			position="150,115" 		size="154,500" 	pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="on" />
-		<widget name="arrowdown" 	position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowdown2" 	position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup" 		position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup2" 	position="-100,-100" 	size="37,70" 	pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="wizard" 								position="490,120" 	size="110,174" 	pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on"/>
 		<ePixmap pixmap="ET-HD/buttons/red.png" 		position="490,305" 	size="21,21" 	alphatest="on" />
 		<widget name="languagetext" 						position="525,305" 	size="150,23"	font="Regular;21" backgroundColor="background" transparent="1" />
@@ -4044,11 +4015,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel text="VideoWizard" 	position="80,40" size="800,35" font="Regular;32" backgroundColor="backtop" transparent="1"/>
-		<widget name="rc" 			position="150,115" 	size="154,500" 	pixmaps="skin_default/rcold.png" zPosition="10" alphatest="on" />
-		<widget name="arrowdown" 	position="-100,-100" 	size="37,70" 		pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowdown2" 	position="-100,-100" 	size="37,70" 		pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup" 		position="-100,-100" 	size="37,70" 		pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
-		<widget name="arrowup2" 	position="-100,-100" 	size="37,70" 		pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="wizard" 								position="490,120" 	size="110,174" 	pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on"/>
 		<ePixmap pixmap="ET-HD/buttons/red.png" 		position="490,305" 	size="21,21" 	alphatest="on" />
 		<widget name="languagetext" 						position="525,305" 	size="150,23"	font="Regular;21" backgroundColor="background" transparent="1" />
