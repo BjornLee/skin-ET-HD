@@ -269,7 +269,6 @@
 
 	<screen name="menu_mainmenu" 		position="0,0" size="1280,720" title="Main menu" 		flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-11" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="0" />
-		<ePixmap position="870,430" zPosition="-9" size="310,200" pixmap="ET-HD/menu/box.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -325,7 +324,6 @@
 	</screen>
 	<screen name="menu_information" 	position="0,0" size="1280,720" title="Main menu" 		flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-11" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="1" />
-		<ePixmap position="870,430" zPosition="-9" size="310,200" pixmap="ET-HD/menu/box.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -346,7 +344,6 @@
 	</screen>
 	<screen name="menu_setup" 			position="0,0" size="1280,720" title="Main menu" 		flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-11" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="1" />
-		<ePixmap position="870,430" zPosition="-9" size="310,200" pixmap="ET-HD/menu/box.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -398,7 +395,6 @@
 	</screen>
 	<screen name="menu_scan" 			position="0,0" size="1280,720" title="Main menu" 		flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-11" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="1" />
-		<ePixmap position="870,430" zPosition="-9" size="310,200" pixmap="ET-HD/menu/box.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -419,7 +415,6 @@
 	</screen>
 	<screen name="menu_system" 			position="0,0" size="1280,720" title="Main menu" 		flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-11" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="1" />
-		<ePixmap position="870,430" zPosition="-9" size="310,200" pixmap="ET-HD/menu/box.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -440,7 +435,6 @@
 	</screen>
 	<screen name="menu_harddisk" 		position="0,0" size="1280,720" title="Main menu" 		flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-11" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="1" />
-		<ePixmap position="870,430" zPosition="-9" size="310,200" pixmap="ET-HD/menu/box.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -461,7 +455,6 @@
 	</screen>
 	<screen name="menu_shutdown" 		position="0,0" size="1280,720" title="Main menu" 		flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-11" size="1280,720" pixmap="ET-HD/menu/back-main.png" transparent="1" />
-		<ePixmap position="870,430" zPosition="-9" size="310,200" pixmap="ET-HD/menu/box.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -548,8 +541,6 @@
 		<widget source="Tuner3" 		render="Label" 	position="500,340" 	size="500,25" font="Regular;22" backgroundColor="background" transparent="1" />
 		<widget source="HDDHeader" 		render="Label" 	position="500,385" 	size="500,25" font="Regular;22" backgroundColor="background" transparent="1" />
 		<widget source="hddA" 			render="Label" 	position="500,415" 	size="500,50" font="Regular;22" backgroundColor="background" transparent="1" />
-
-		<ePixmap position="870,430" zPosition="-9" size="310,200" pixmap="ET-HD/menu/box.png" alphatest="blend" transparent="1" />
 		<ePixmap position="80,460" zPosition="-9" size="200,110" pixmap="ET-HD/icons/kerni.png" alphatest="blend" transparent="1" />
 	</screen>
 	<screen name="AdapterSetup" 					position="0,0" 		size="1280,720" 	title="Network Setup" 				flags="wfNoBorder">
